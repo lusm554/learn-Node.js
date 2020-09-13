@@ -4,7 +4,7 @@
   "description": "",
   "main": "processExit.js",
   "scripts": {
-    "server": "node processExit.js"
+    "server": "nodemon processExit.js"
   },
   "keywords": [],
   "author": "",

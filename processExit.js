@@ -11,3 +11,7 @@ const server = app.listen(8080, () => console.log('http://localhost:8080/') )
 process.on('SIGTERM', () => {
     server.close(() => console.log('Process terminated'))
 })
+
+setTimeout(() => {
+    process.kill(process.pid, 'SIGTERM')
+}, 5000);

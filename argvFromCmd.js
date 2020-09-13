@@ -13,6 +13,7 @@ console.dir(obj)
 
 // Second approach for parse arguments from cmd
 // node argvFromCmd.js -a 2 -b 3
+// node argvFromCmd.js --a=2 --b=3
 // { _: [], a: 2, b: 3 }
 let args2 = require('minimist')(process.argv.slice(2))
 

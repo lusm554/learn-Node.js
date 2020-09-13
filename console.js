@@ -1,0 +1,1 @@
+console.log('My %s has %d years and %d month obj --> %o', 'cat', 2, 3.2, {name: 'Masya', age: 2})

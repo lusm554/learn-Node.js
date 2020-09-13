@@ -12,3 +12,9 @@ let arr = Array.from({ length: 10 }).fill('apple')
 arr.forEach(num => {
     console.count(num)
 })
+
+// console.trace()
+const func1 = () => console.trace()
+const func2 = () => func1()
+
+func2()

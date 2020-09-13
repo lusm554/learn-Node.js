@@ -1,5 +1,6 @@
 {
   "name": "nodejs",
+  "private": "true",
   "version": "1.0.0",
   "description": "",
   "main": "processExit.js",

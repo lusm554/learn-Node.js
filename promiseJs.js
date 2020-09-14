@@ -18,3 +18,19 @@ const isTaskDoneYet = () => {
 }
 
 isTaskDoneYet()
+
+const prom1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve('prom1 done')
+    }, 1000);
+})
+
+const prom2 = new Promise((resolve, reject) => {
+    resolve('prom2 done')
+})
+
+Promise.all([prom1, prom2])
+    .then(console.log, console.error)
+
+Promise.race([prom1, prom2])
+    .then(console.log, console.error)

@@ -5,7 +5,7 @@ const foo = () => {
     console.log('foo')
     setTimeout(() => {
         baz()
-    }, 0);
+    }, 1000);
     new Promise((resolve, reject) => {
         resolve('Promise done')
     })
@@ -14,3 +14,8 @@ const foo = () => {
 }
 
 foo()
+
+process.nextTick(() => {
+    console.log('>>>>end of the sync operations<<<<')
+    console.log('---->START ASYNC OPERATIONS')
+})

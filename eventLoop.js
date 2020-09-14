@@ -19,3 +19,5 @@ process.nextTick(() => {
     console.log('>>>>end of the sync operations<<<<')
     console.log('---->START ASYNC OPERATIONS')
 })
+
+setImmediate(() => console.log(1))

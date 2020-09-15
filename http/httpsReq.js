@@ -12,9 +12,15 @@ const get_options = {
 
 const get_req = https.request(get_options, res => {
     console.log('GET status code:', res.statusCode)
+    let data = ''
 
     res.on('data', d => {
-        process.stdout.write(d)
+        data += d
+    })
+
+    res.on('end', () => {
+        let resData = JSON.parse(data)
+        console.log(resData)
     })
 })
 

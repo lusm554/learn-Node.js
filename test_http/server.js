@@ -1,7 +1,9 @@
 const app = require('express')()
 const https = require('https')
 const fs = require('fs')
-require('dotenv').config()
+const bodyParser = require('body-parser')
+
+app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
@@ -27,6 +29,13 @@ app.get('/something', (req, res) => {
     }
 
     res.json(something)
+})
+
+app.post('/something', (req, res) => {
+    let data = req.body
+
+    console.log(data)
+    res.sendStatus(200)
 })
 
 const options = {

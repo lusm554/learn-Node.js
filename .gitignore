@@ -3,3 +3,4 @@ node_modules
 #HTTPS 
 server.crt
 server.key
+.env

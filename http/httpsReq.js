@@ -1,3 +1,5 @@
+// Makes all requests insecure
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const https = require('https')
 const options = {
     hostname: '127.0.0.1',

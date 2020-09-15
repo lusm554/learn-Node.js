@@ -1,4 +1,6 @@
 const app = require('express')()
+const https = require('https')
+const fs = require('fs')
 
 app.get('/something', (req, res) => {
     let something = {
@@ -22,4 +24,9 @@ app.get('/something', (req, res) => {
     res.json(something)
 })
 
-app.listen(8080)
+const options = {
+    key: fs.readFileSync('./server.key'),
+    cert: fs.readFileSync('./server.crt')
+}
+
+https.createServer(options, app).listen(8080)

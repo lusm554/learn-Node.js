@@ -1,6 +1,9 @@
 node_modules
 
-#HTTPS 
+# HTTPS 
 server.crt
 server.key
 .env
+
+# Examples of fs 
+fs/*.txt

@@ -10,5 +10,7 @@ fs.stat(__dirname+'/text.txt', (err, stats) => {
         return
     }
 
-    console.log(stats)
+    console.log('is file:', stats.isFile())
+    console.log('is directory:', stats.isDirectory())
+    console.log('size:', stats.size)
 })

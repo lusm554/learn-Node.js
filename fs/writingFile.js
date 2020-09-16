@@ -4,7 +4,7 @@ const path = require('path')
 let content = 'the content was here...'
 
 // Async write file 
-fs.writeFile(path.resolve('fs', 'content.txt'), content, (err) => {
+fs.writeFile(path.resolve('fs', 'content.txt'), content, { flag: 'a+'},(err) => {
     if(err) {
         console.error(err)
         return 

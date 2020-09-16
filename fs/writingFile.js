@@ -18,3 +18,13 @@ try {
 } catch (error) {
     console.error(error)
 }
+
+let append = '\nsecond line...\r\n'
+
+// async appendFile/sync appendFileSync
+fs.appendFile(path.resolve('fs', 'content.txt'), append, (err) => {
+    if(err) {
+        console.log(err)
+        return
+    }
+})

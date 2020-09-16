@@ -10,5 +10,5 @@ fs.stat(__dirname+'/text.txt', (err, stats) => {
         return
     }
 
-    console.log(stats.)
+    console.log(stats)
 })

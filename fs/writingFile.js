@@ -19,7 +19,7 @@ try {
     console.error(error)
 }
 
-let append = '\nsecond line...\r\n'
+let append = '\nsecond line...\n'
 
 // async appendFile/sync appendFileSync
 fs.appendFile(path.resolve('fs', 'content.txt'), append, (err) => {

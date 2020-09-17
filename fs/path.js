@@ -26,3 +26,7 @@ console.log(
 console.log(
     path.normalize('/users/who/../test.txt')
 )
+
+console.log(
+    path.parse('../fs/path.js')
+)

@@ -7,3 +7,6 @@ server.key
 
 # Examples of fs 
 fs/*.txt
+
+# Examples of http/stream
+test_http/*.txt

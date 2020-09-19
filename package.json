@@ -6,7 +6,8 @@
   "main": "processExit.js",
   "scripts": {
     "server": "nodemon processExit.js",
-    "test_server": "nodemon test_http/server.js"
+    "test_server": "nodemon test_http/server.js",
+    "stream_server": "nodemon stream.js"
   },
   "keywords": [],
   "author": "",

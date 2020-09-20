@@ -1,1 +1,1 @@
-export NODE_ENV=production; node test.js
+export NODE_ENV=production; node env.js
